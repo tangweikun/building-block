@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 
-export default class Button extends React.PureComponent {
+export class Button extends React.PureComponent {
   render() {
     const {
       type = 'default',
