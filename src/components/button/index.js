@@ -5,10 +5,10 @@ export default class Button extends React.PureComponent {
   render() {
     const {
       type = 'default',
-      title = '',
       children,
       onClick,
       htmlType = 'button',
+      style = {},
       ...otherProps
     } = this.props
 
@@ -17,7 +17,7 @@ export default class Button extends React.PureComponent {
         {...otherProps}
         className={`btn btn-${type}`}
         type={htmlType}
-        title={title}
+        style={style}
         onClick={onClick}
       >
         {children}
