@@ -12,7 +12,7 @@ storiesOf('Welcome', module).add('to Storybook', () => (
 storiesOf('Button', module)
   .add('default', () => <Button>Default</Button>)
   .add('primary', () => (
-    <Button type="primary" title="I have title" onClick={action('clicked')}>
+    <Button theme="primary" title="I have title" onClick={action('clicked')}>
       Primary
     </Button>
   ))

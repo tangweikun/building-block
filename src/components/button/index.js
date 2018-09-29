@@ -3,23 +3,10 @@ import './index.css'
 
 export class Button extends React.PureComponent {
   render() {
-    const {
-      type = 'default',
-      children,
-      onClick,
-      htmlType = 'button',
-      style = {},
-      ...otherProps
-    } = this.props
+    const { theme = 'default', children, ...otherProps } = this.props
 
     return (
-      <button
-        {...otherProps}
-        className={`btn btn-${type}`}
-        type={htmlType}
-        style={style}
-        onClick={onClick}
-      >
+      <button {...otherProps} className={`btn btn-${theme}`}>
         {children}
       </button>
     )

@@ -6,9 +6,8 @@ You can use all HTML `<button>` element native attributes, for example `disabled
 
 ## API
 
-| Property | Description                                                                                                                      | Type     | Default   |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------- | -------- | --------- |
-| htmlType | set the original html `type` of `button`, see: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-type) | string   | `button`  |
-| type     | can be set to `primary` or omitted (meaning `default`)                                                                           | string   | `default` |
-| onClick  | set the handler to handle `click` event                                                                                          | function | -         |
-| style    | can change button's css style                                                                                                    | object   | {}        |
+| Property | Description                                            | Type     | Default   |
+| -------- | ------------------------------------------------------ | -------- | --------- |
+| theme    | can be set to `primary` or omitted (meaning `default`) | string   | `default` |
+| onClick  | set the handler to handle `click` event                | function | -         |
+| style    | can change button's css style                          | object   | {}        |
