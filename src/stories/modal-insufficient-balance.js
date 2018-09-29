@@ -1,5 +1,5 @@
 import React from 'react'
-import { Foo } from '../components'
+import { FeedbackModal } from '../components'
 import INSUFFICIENT_BALANCE from 'assets/insufficient-balance.png'
 
 export class InsufficientBalanceModal extends React.PureComponent {
@@ -13,7 +13,7 @@ export class InsufficientBalanceModal extends React.PureComponent {
     return (
       <div>
         <button onClick={this.openModal}>Open Modal</button>
-        <Foo
+        <FeedbackModal
           showCloseIcon
           onClick={this.closeModal}
           logo={INSUFFICIENT_BALANCE}

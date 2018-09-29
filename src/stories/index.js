@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 import { Welcome } from '@storybook/react/demo'
-import { Button, Foo } from '../components'
+import { Button } from '../components'
 import { SuccessfullyOrderedModal } from './modal-successfully-ordered'
 import { InsufficientBalanceModal } from './modal-insufficient-balance'
 
@@ -16,14 +16,14 @@ storiesOf('Modal', module)
   .add('余额不足', () => <InsufficientBalanceModal />)
 
 storiesOf('Button', module)
-  .add('default', () => <Button>Default</Button>)
-  .add('primary', () => (
+  .add('Default', () => <Button>Default</Button>)
+  .add('Primary', () => (
     <Button theme="primary" title="I have title" onClick={action('clicked')}>
       Primary
     </Button>
   ))
-  .add('disabled', () => <Button disabled>Disabled</Button>)
-  .add('with custom style', () => (
+  .add('Disabled', () => <Button disabled>Disabled</Button>)
+  .add('With custom style', () => (
     <Button style={{ color: 'red', borderColor: 'red', height: '60px' }}>
       With Custom Style
     </Button>

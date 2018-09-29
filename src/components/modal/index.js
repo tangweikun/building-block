@@ -27,7 +27,7 @@ const customStyles = {
   },
 }
 
-export class Foo extends React.Component {
+export class FeedbackModal extends React.Component {
   render() {
     const {
       isOpen,

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Foo } from '../components'
+import { FeedbackModal } from '../components'
 import SUCCESSFULLY_ORDERED from 'assets/successfully-ordered.png'
 
 export class SuccessfullyOrderedModal extends React.PureComponent {
@@ -13,7 +13,7 @@ export class SuccessfullyOrderedModal extends React.PureComponent {
     return (
       <div>
         <button onClick={this.openModal}>Open Modal</button>
-        <Foo
+        <FeedbackModal
           onClick={this.closeModal}
           logo={SUCCESSFULLY_ORDERED}
           texts={['Your order is confirmed!']}
