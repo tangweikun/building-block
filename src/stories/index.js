@@ -6,6 +6,8 @@ import { Welcome } from '@storybook/react/demo'
 import { Button } from '../components'
 import { SuccessfullyOrderedModal } from './modal-successfully-ordered'
 import { InsufficientBalanceModal } from './modal-insufficient-balance'
+import { BetFailedModal } from './modal-bet-failed'
+import { GameExpiredModal } from './modal-game-expired'
 
 storiesOf('Welcome', module).add('to Storybook', () => (
   <Welcome showApp={linkTo('Button')} />
@@ -14,6 +16,8 @@ storiesOf('Welcome', module).add('to Storybook', () => (
 storiesOf('Modal', module)
   .add('投注成功', () => <SuccessfullyOrderedModal />)
   .add('余额不足', () => <InsufficientBalanceModal />)
+  .add('投注失败', () => <BetFailedModal />)
+  .add('比赛过期', () => <GameExpiredModal />)
 
 storiesOf('Button', module)
   .add('Default', () => <Button>Default</Button>)

@@ -3,24 +3,22 @@ import { FeedbackModal } from '../components'
 import SUCCESSFULLY_ORDERED from 'assets/successfully-ordered.png'
 
 export class SuccessfullyOrderedModal extends React.PureComponent {
-  state = { modalIsOpen: true }
+  state = { modalIsOpen: false }
 
-  openModal = () => this.setState({ modalIsOpen: true })
-
-  closeModal = () => this.setState({ modalIsOpen: false })
+  openOrCloseModal = () =>
+    this.setState(preState => ({ modalIsOpen: !preState.modalIsOpen }))
 
   render() {
     return (
       <div>
-        <button onClick={this.openModal}>Open Modal</button>
+        <button onClick={this.openOrCloseModal}>Open Modal</button>
         <FeedbackModal
-          onClick={this.closeModal}
+          onClick={this.openOrCloseModal}
           logo={SUCCESSFULLY_ORDERED}
           texts={['Your order is confirmed!']}
           footerText="OK"
           isOpen={this.state.modalIsOpen}
-          ariaHideApp={false}
-          closeModal={this.closeModal}
+          closeModal={this.openOrCloseModal}
         />
       </div>
     )

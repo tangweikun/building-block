@@ -1,8 +1,8 @@
 import React from 'react'
 import { FeedbackModal } from '../components'
-import INSUFFICIENT_BALANCE from 'assets/insufficient-balance.png'
+import GAME_EXPIRED from 'assets/game-expired.png'
 
-export class InsufficientBalanceModal extends React.PureComponent {
+export class GameExpiredModal extends React.PureComponent {
   state = { modalIsOpen: false }
 
   openOrCloseModal = () =>
@@ -13,11 +13,10 @@ export class InsufficientBalanceModal extends React.PureComponent {
       <div>
         <button onClick={this.openOrCloseModal}>Open Modal</button>
         <FeedbackModal
-          showCloseIcon
           onClick={this.openOrCloseModal}
-          logo={INSUFFICIENT_BALANCE}
-          texts={['Insufficient balance,', 'Please recharge first!']}
-          footerText="Deposit"
+          logo={GAME_EXPIRED}
+          texts={['There are no games for the moment.']}
+          footerText="OK"
           isOpen={this.state.modalIsOpen}
           closeModal={this.openOrCloseModal}
         />
