@@ -33,7 +33,6 @@ export class FeedbackModal extends React.Component {
       isOpen,
       closeModal,
       logo,
-      text,
       footerText,
       onClick,
       showCloseIcon,

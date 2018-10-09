@@ -1,0 +1,16 @@
+.loading-wrapper {
+  position: fixed;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding-top: 233px;
+}
+
+.loading-wrapper > img {
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  background: #fff;
+}
