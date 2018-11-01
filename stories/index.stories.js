@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
 import { Button, Welcome } from '@storybook/react/demo'
-import { Foo } from '../components'
+import { Foo, Bar } from '../components'
 
 storiesOf('Welcome', module).add('to Storybook', () => (
   <Welcome showApp={linkTo('Button')} />
@@ -13,6 +13,7 @@ storiesOf('Welcome', module).add('to Storybook', () => (
 
 storiesOf('Button', module)
   .add('foo', () => <Foo />)
+  .add('bar', () => <Bar />)
   .add('with text', () => (
     <Button onClick={action('clicked')}>Hello Button</Button>
   ))

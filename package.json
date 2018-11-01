@@ -5,7 +5,9 @@
   "repository": "https://github.com/tangweikun/building-block.git",
   "author": "tangweikun <819573105@qq.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "styled-components": "^4.0.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
