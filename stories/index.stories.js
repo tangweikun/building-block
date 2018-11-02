@@ -5,10 +5,12 @@ import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
 import { Button, Welcome } from '@storybook/react/demo'
-import { Foo, Bar } from '../components'
+import { Foo, Bar, Tooltip } from '../components'
 
-storiesOf('Welcome', module).add('to Storybook', () => (
-  <Welcome showApp={linkTo('Button')} />
+storiesOf('Tooltip', module).add('to Storybook', () => (
+  <div style={{ margin: '100px' }}>
+    <Tooltip title="我是提示">鼠标移动到这来</Tooltip>
+  </div>
 ))
 
 storiesOf('Button', module)

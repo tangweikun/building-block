@@ -12,3 +12,5 @@ export const Bar = styled.div`
   width: 100px;
   background: red;
 `
+
+export * from './Tooltip'
