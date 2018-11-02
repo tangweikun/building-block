@@ -22,6 +22,7 @@ module.exports = {
               require.resolve('@babel/plugin-proposal-class-properties'),
               { loose: true },
             ],
+            'babel-plugin-styled-components',
           ],
         },
       },
