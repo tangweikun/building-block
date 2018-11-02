@@ -2,3 +2,7 @@
 /components
 /.storybook
 /storybook-static
+/package.json
+TODO.md
+/stories
+webpack.config.js
