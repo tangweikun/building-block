@@ -8,7 +8,7 @@
 
 ```bash
 yarn add building-block
-import { Tooltip,ScrollContainer } from 'building-block'
+import { Tooltip, ScrollContainer } from 'building-block'
 ```
 
 ## Live Demo

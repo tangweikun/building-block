@@ -3,3 +3,5 @@
 - [ ] format storybook
 - [ ] deploy storybook
 - [ ] http://building-block.surge.sh/
+- [ ] common theme
+- [ ] Move components to src

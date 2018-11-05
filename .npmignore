@@ -8,3 +8,4 @@ TODO.md
 webpack.config.js
 yarn.lock
 /examples
+/.cache
