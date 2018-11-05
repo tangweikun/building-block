@@ -1,11 +1,12 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export class ScrollContainer extends React.Component {
   render() {
+    const { outerStyle, noWrap } = this.props
     return (
-      <OuterWrapper style={this.props.outerStyle}>
-        <InnerWrapper>{this.props.children}</InnerWrapper>
+      <OuterWrapper style={outerStyle}>
+        <InnerWrapper noWrap={noWrap}>{this.props.children}</InnerWrapper>
       </OuterWrapper>
     )
   }
@@ -25,4 +26,10 @@ const InnerWrapper = styled.div`
   padding-bottom: 17px;
   padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
   box-sizing: content-box; /* So the width will be 100% + 17px */
+
+  ${props =>
+    props.noWrap &&
+    css`
+      white-space: nowrap;
+    `};
 `

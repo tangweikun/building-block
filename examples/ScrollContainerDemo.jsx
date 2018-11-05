@@ -34,13 +34,29 @@ export class ScrollContainerDemo extends React.Component {
             <ScrollContainer
               outerStyle={{
                 border: '4px solid purple',
-                paddingLeft: '6px',
-                width: '160px',
-                height: '160px',
+                width: '40px',
+                height: '200px',
               }}
             >
               {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(x => (
-                <div key={x}>包含多个块级元素</div>
+                <Block key={x} />
+              ))}
+            </ScrollContainer>
+          </Container>
+
+          <Container>
+            <h4>With noWrap</h4>
+            <ScrollContainer
+              noWrap
+              outerStyle={{
+                border: '4px solid purple',
+                width: '200px',
+                height: '40px',
+                whiteSpace: 'no-wrap',
+              }}
+            >
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(x => (
+                <InlineBlock key={x} />
               ))}
             </ScrollContainer>
           </Container>
@@ -52,8 +68,19 @@ export class ScrollContainerDemo extends React.Component {
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `
 
 const Container = styled.div`
-  min-width: 300px;
+  min-width: 240px;
+`
+
+const Block = styled.div`
+  width: 40px;
+  height: 40px;
+  background: ${_ => '#' + (~~(Math.random() * (1 << 24))).toString(16)};
+`
+
+const InlineBlock = styled(Block)`
+  display: inline-block;
 `
