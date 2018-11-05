@@ -1,2 +1,4 @@
 - [ ] Add Browsers support
-- [ ] tooltip
+- [x] tooltip
+- [ ] format storybook
+- [ ] deploy storybook
