@@ -10,51 +10,43 @@ export class CardDemo extends React.Component {
         <Wrapper>
           <Container>
             <h4>Basic</h4>
-            <InfoCard mainText="Basic Card" subText="basic card" />
+            <InfoCard subText="basic card">Basic Card</InfoCard>
           </Container>
           <Container>
             <h4>With tips</h4>
-            <InfoCard
-              mainText="With tips"
-              subText="with tips"
-              withTips
-              tipsText="我是提示文案"
-            />
+            <InfoCard subText="with tips" withTips tipsText="我是提示文案">
+              With tips
+            </InfoCard>
           </Container>
           <Container>
             <h4>Single CardGroup</h4>
             <CardGroup>
-              <InfoCard mainText="Basic Card" subText="basic card" />
+              <InfoCard subText="basic card">Basic Card</InfoCard>
             </CardGroup>
           </Container>
           <Container>
             <h4>Single CardGroup</h4>
             <CardGroup>
-              <InfoCard mainText="Basic Card" subText="basic card" />
-              <InfoCard mainText="Basic Card" subText="basic card" />
+              <InfoCard subText="basic card">Basic Card</InfoCard>
+              <InfoCard subText="basic card">Basic Card</InfoCard>
             </CardGroup>
           </Container>
 
           <Container>
             <h4>Multiple CardGroup</h4>
             <CardGroup>
-              <InfoCard
-                mainText="With tips"
-                subText="with tips"
-                withTips
-                tipsText="我是提示文案"
-              />
-              <InfoCard
-                mainText="With tips"
-                subText="with tips"
-                withTips
-                tipsText="我是提示文案"
-              />
+              <InfoCard subText="with tips" withTips tipsText="我是提示文案">
+                <div>With tips</div>
+                <div>With tips</div>
+              </InfoCard>
+              <InfoCard subText="with tips" withTips tipsText="我是提示文案">
+                With tips
+              </InfoCard>
             </CardGroup>
             <CardGroup>
-              <InfoCard mainText="Basic Card" subText="basic card" />
-              <InfoCard mainText="Basic Card" subText="basic card" />
-              <InfoCard mainText="Basic Card" subText="basic card" />
+              <InfoCard subText="basic card">Basic Card</InfoCard>
+              <InfoCard subText="basic card">Basic Card</InfoCard>
+              <InfoCard subText="basic card">Basic Card</InfoCard>
             </CardGroup>
           </Container>
         </Wrapper>

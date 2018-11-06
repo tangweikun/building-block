@@ -26,7 +26,7 @@ export class InfoCard extends React.Component {
 
     return (
       <InfoCardWrapper>
-        <MainText>{this.props.mainText}</MainText>
+        <MainText>{this.props.children}</MainText>
         <SubText>{this.props.subText}</SubText>
         {withTips && (
           <Info>
