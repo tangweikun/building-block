@@ -3,3 +3,6 @@
 - [ ] format storybook
 - [ ] deploy storybook
 - [ ] http://building-block.surge.sh/
+- [ ] common theme
+- [ ] Move components to src
+- [ ] box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.1);
