@@ -79,17 +79,8 @@ const InfoCardWrapper = styled.div`
   min-width: 100px;
   text-align: center;
   background: #fff;
-  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.1);
 
-  ${props =>
-    !props.isLastChild &&
-    css`
-      border-right: 1px solid #dee2e6;
-    `};
-`
-
-const Group = styled.div`
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid #dee2e6;
+  &:not(:last-child) {
+    border-right: 1px solid #dee2e6;
+  }
 `

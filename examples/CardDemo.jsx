@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import { InfoCard } from '../components'
+import { InfoCard, CardGroup } from '../components'
+import { Wrapper, Container } from './Common'
 
 export class CardDemo extends React.Component {
   render() {
@@ -21,17 +21,44 @@ export class CardDemo extends React.Component {
               tipsText="我是提示文案"
             />
           </Container>
+          <Container>
+            <h4>Single CardGroup</h4>
+            <CardGroup>
+              <InfoCard mainText="Basic Card" subText="basic card" />
+            </CardGroup>
+          </Container>
+          <Container>
+            <h4>Single CardGroup</h4>
+            <CardGroup>
+              <InfoCard mainText="Basic Card" subText="basic card" />
+              <InfoCard mainText="Basic Card" subText="basic card" />
+            </CardGroup>
+          </Container>
+
+          <Container>
+            <h4>Multiple CardGroup</h4>
+            <CardGroup>
+              <InfoCard
+                mainText="With tips"
+                subText="with tips"
+                withTips
+                tipsText="我是提示文案"
+              />
+              <InfoCard
+                mainText="With tips"
+                subText="with tips"
+                withTips
+                tipsText="我是提示文案"
+              />
+            </CardGroup>
+            <CardGroup>
+              <InfoCard mainText="Basic Card" subText="basic card" />
+              <InfoCard mainText="Basic Card" subText="basic card" />
+              <InfoCard mainText="Basic Card" subText="basic card" />
+            </CardGroup>
+          </Container>
         </Wrapper>
       </React.Fragment>
     )
   }
 }
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`
-
-const Container = styled.div`
-  min-width: 240px;
-`

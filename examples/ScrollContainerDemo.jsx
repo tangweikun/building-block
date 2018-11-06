@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 import { ScrollContainer } from '../components'
+import { Wrapper, Container, Block, InlineBlock } from './Common'
 
 export class ScrollContainerDemo extends React.Component {
   render() {
@@ -65,22 +65,3 @@ export class ScrollContainerDemo extends React.Component {
     )
   }
 }
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`
-
-const Container = styled.div`
-  min-width: 240px;
-`
-
-const Block = styled.div`
-  width: 40px;
-  height: 40px;
-  background: ${_ => '#' + (~~(Math.random() * (1 << 24))).toString(16)};
-`
-
-const InlineBlock = styled(Block)`
-  display: inline-block;
-`
