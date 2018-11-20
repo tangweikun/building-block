@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 // TODO: use `radial-gradient` instead of `-webkit-gradient`
-export const StyledButton = styled.button`
+export const BaseButton = styled.button`
   border: none;
   background-image: -webkit-gradient(
     radial,
@@ -31,12 +31,6 @@ export const StyledButton = styled.button`
     inset rgba(0, 0, 0, 0.15) 0 -0.1em 0.3em, hsl(0, 0%, 60%) 0 0.1em 3px,
     hsl(0, 0%, 45%) 0 0.3em 1px, rgba(0, 0, 0, 0.2) 0 0.5em 5px;
 
-  &::before {
-    font: 1.2em/0 sans-serif;
-    content: attr(data-icon);
-    margin-right: 6px;
-  }
-
   &:hover {
     background-color: hsl(0, 0%, 83%);
   }
@@ -52,6 +46,12 @@ export const StyledButton = styled.button`
       inset rgba(0, 0, 0, 0.2) 0 -0.1em 0.3em, rgba(0, 0, 0, 0.4) 0 0.1em 1px,
       rgba(0, 0, 0, 0.2) 0 0.2em 6px;
     transform: translateY(0.2em);
+  }
+
+  &::before {
+    font: 1.2em/0 sans-serif;
+    content: attr(data-icon);
+    margin-right: 6px;
   }
 
   ${props =>
