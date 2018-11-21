@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { BaseButton } from './BaseButton'
+import { BaseButton } from './BaseButton.jsx'
 
 export const ShapedButton = styled(BaseButton)`
   ${props =>

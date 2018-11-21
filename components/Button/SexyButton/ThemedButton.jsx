@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { ShapedButton } from './ShapedButton'
+import { ShapedButton } from './ShapedButton.jsx'
 
 export const ThemedButton = styled(ShapedButton)`
   ${props =>
