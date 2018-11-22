@@ -5,9 +5,12 @@ import {
   ScrollContainerDemo,
   CardDemo,
   ButtonDemo,
+  LoadingDemo,
 } from '../examples'
 
 storiesOf('Button', module).add('SexyButton', () => <ButtonDemo />)
+
+storiesOf('Loading', module).add('BouncingLoading', () => <LoadingDemo />)
 
 storiesOf('Tooltip', module).add('basic', () => <TooltipDemo />)
 

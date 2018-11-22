@@ -28,8 +28,7 @@ const InnerWrapper = styled.div`
   box-sizing: content-box; /* So the width will be 100% + 17px */
 
   ${props =>
-    props.noWrap &&
-    css`
+    props.noWrap && css`
       white-space: nowrap;
-    `};
+    `}
 `

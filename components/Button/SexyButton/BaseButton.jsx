@@ -1,30 +1,26 @@
 import styled, { css } from 'styled-components'
 
-// TODO: use `radial-gradient` instead of `-webkit-gradient`
 export const BaseButton = styled.button`
-  border: none;
-  background-image: -webkit-gradient(
-    radial,
-    50% 0,
-    100,
-    50% 0,
-    0,
-    from(rgba(255, 255, 255, 0)),
-    to(rgba(255, 255, 255, 0.7))
-  );
-  font: 24px/1em 'Droid Sans', sans-serif;
-  font-weight: bold;
-  text-shadow: rgba(255, 255, 255, 0.5) 0 1px;
   padding: 0.5em 0.6em 0.4em;
   margin: 0.5em;
   display: inline-block;
   position: relative;
   border-radius: 8px;
-  border-top: 1px solid rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   transition: background 0.4s ease-in-out;
   user-select: none;
-  cursor: pointer;
+  font-weight: bold;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 1px;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.7) 0,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  border: none;
+  font: 24px/1em 'Droid Sans', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   color: hsl(0, 0%, 40%);
   background-color: hsl(0, 0%, 75%);
   box-shadow: inset rgba(255, 254, 255, 0.6) 0 0.3em 0.3em,

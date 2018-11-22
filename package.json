@@ -5,6 +5,12 @@
   "repository": "https://github.com/tangweikun/building-block.git",
   "author": "tangweikun <819573105@qq.com>",
   "license": "MIT",
+  "description": "React UI library",
+  "keywords": [
+    "react",
+    "styled-components",
+    "components"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.2",
