@@ -6,9 +6,12 @@ import {
   CardDemo,
   ButtonDemo,
   LoadingDemo,
+  SwitchDemo,
 } from '../examples'
 
 storiesOf('Button', module).add('SexyButton', () => <ButtonDemo />)
+
+storiesOf('Switch', module).add('ToggleSwitch', () => <SwitchDemo />)
 
 storiesOf('Loading', module).add('BouncingLoading', () => <LoadingDemo />)
 

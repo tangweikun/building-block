@@ -7,8 +7,9 @@ const dotSpin = keyframes`
 `
 
 export const DonutSpinner = styled.div`
-  width: 30px;
-  height: 30px;
+  --size: 30px;
+  width: var(--size);
+  height: var(--size);
   border: 4px solid rgba(0, 0, 0, 0.1);
   display: inline-block;
   border-radius: 50%;
