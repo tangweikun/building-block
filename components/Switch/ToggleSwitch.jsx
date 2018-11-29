@@ -25,7 +25,7 @@ export const ToggleSwitch = styled.input.attrs({
     left: calc(var(--size) * -0.2 - 1px);
     top: calc(var(--size) * -0.2 - 1px);
     width: calc(var(--size) * 2 + 2px);
-    border-radius: var(--size);
+    border-radius: calc(var(--size) + 1px);
     height: calc(var(--size) + 2px);
     background: #b8b8bb;
     z-index: 1;

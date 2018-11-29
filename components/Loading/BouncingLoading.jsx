@@ -1,10 +1,10 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
-export const BouncingLoading = () => (
+export const BouncingLoading = props => (
   <Wrapper>
     {[0, 1, 2].map(x => (
-      <Ball key={x} />
+      <Ball size={props.size} key={x} />
     ))}
   </Wrapper>
 )
@@ -22,13 +22,16 @@ const bouncing = keyframes`
 `
 
 export const Ball = styled.div`
-  width: 1rem;
-  height: 1rem;
   border-radius: 50%;
   margin: 0.2rem;
-  background: #8385aa;
   position: relative;
   animation: ${bouncing} 0.6s alternate infinite;
+
+  --size: ${props => props.size || '1rem'};
+  --bg: ${props => props.bg || '#8385aa'}
+  width: var(--size);
+  height: var(--size);
+  background: var(--bg);
 
   &:nth-child(2) {
     animation-delay: 0.2s;
