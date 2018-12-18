@@ -9,7 +9,7 @@ export class ButtonDemo extends React.Component {
         <h2>Button</h2>
         <Wrapper>
           <Container>
-            <h4>Basic</h4>
+            <h4>SexyButton</h4>
             <SexyButton>Button</SexyButton>
             <SexyButton data-icon="✆" theme="blue" shape="brackets">
               Call

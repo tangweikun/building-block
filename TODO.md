@@ -6,6 +6,7 @@
 - [ ] common theme
 - [ ] Move components to src
 - [ ] box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.1);
+- [ ] https://loading.io/css/
 
 ### `webpack`配置不完善，在其他项目引用该模块时，`styled-components`的样式被影响，并且生成的包体积过大
 
