@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   mode: 'production',
@@ -6,8 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'index.js',
-    library: '',
-    libraryTarget: 'commonjs',
+    libraryTarget: 'commonjs2',
   },
   module: {
     rules: [
@@ -28,8 +27,27 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimize: true,
+    moduleIds: 'named',
+    chunkIds: 'named',
+    splitChunks: {
+      chunks: 'all',
+      minSize: 30000,
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 5,
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          reuseExistingChunk: true,
+          priority: -10,
+        },
+      },
+    },
+  },
   externals: {
     react: 'react',
     'styled-components': 'styled-components',
   },
-}
+};
